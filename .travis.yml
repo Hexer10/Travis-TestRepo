@@ -25,4 +25,3 @@ deploy:
   file: "file.zip"
   on:
     repo: Hexer10/Travis-TestRepo
-    rvm: 2.0.0
