@@ -25,3 +25,5 @@ deploy:
   file: "file.zip"
   on:
     repo: Hexer10/Travis-TestRepo
+    all_branches: true
+    rvm: 2.0.0
