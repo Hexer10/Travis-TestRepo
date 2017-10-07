@@ -3,7 +3,7 @@ sudo: false
 language: c
 
 script:
-  - 'bash ci/build.sh;'
+  - 'zip file.zip file.txt;'
 
 notifications:
     email: false
