@@ -25,5 +25,4 @@ deploy:
   file: "file.zip"
   on:
     repo: Hexer10/Travis-TestRepo
-    all_branches: true
     tag_name: "3.00"
