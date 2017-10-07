@@ -4,6 +4,7 @@ language: c
 
 script:
   - 'zip file.zip file.txt;'
+  - 'git add file.zip'
 
 notifications:
     email: false
