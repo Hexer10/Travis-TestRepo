@@ -1,4 +1,14 @@
+addons:
+  apt:
+    packages:
+    - lftp
+    - lib32z1
+    - lib32stdc++6
+
 language: c
+
+sudo: false
+
 deploy:
   provider: releases
   api_key:
