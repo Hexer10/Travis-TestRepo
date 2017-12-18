@@ -22,8 +22,11 @@ mv addons/sourcemod/scripting/compiled/plugin.smx addons/sourcemod/plugins
 
 echo "Delete sourcemod folders"
 cd addons/sourcemod/
+shopt -s extglob
 rm -rf !(plugins)
-cd ../..
+cd ..
+rm -rf metamod
+cd ..
 
 echo "Compress the plugin"
 zip -9rq plugin.zip addons
