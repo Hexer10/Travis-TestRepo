@@ -18,5 +18,6 @@ fi
 
 echo "Create clean plugins folder"
 mkdir addons/sourcemod/plugins
+mv addons/sourcemod/scripting/compiled/plugin.sp addons/sourcemod/plugins
 
 echo "Build done"
