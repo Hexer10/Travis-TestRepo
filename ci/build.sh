@@ -20,4 +20,12 @@ echo "Create clean plugins folder"
 mkdir addons/sourcemod/plugins
 mv addons/sourcemod/scripting/compiled/plugin.smx addons/sourcemod/plugins
 
+echo "Delete sourcemod folders"
+cd addons/sourcemod/
+rm -rf !(plugins)
+cd ../..
+
+echo "Compress the plugin"
+zip -9rq plugin.zip addons
+
 echo "Build done"
