@@ -25,5 +25,5 @@ deploy:
   file: plugin.zip
   skip_cleanup: true
   on:
-    tags: true
+    tags: false
     repo: Hexer10/Travis-TestRepo
