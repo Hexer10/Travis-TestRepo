@@ -9,7 +9,7 @@ echo "Give compiler rights for compile"
 chmod +x addons/sourcemod/scripting/spcomp
 
 
-addons/sourcemod/scripting/compile.sh addons/sourcemod/scripting/plugin.sp
+addons/sourcemod/scripting/compile.sh plugin.sp
 
 echo "Remove plugins folder if exists"
 if [ -d "addons/sourcemod/plugins" ]; then
