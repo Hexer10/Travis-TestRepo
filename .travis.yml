@@ -9,14 +9,9 @@ language: c
 
 sudo: false
 
-env:
-  - VERSION=1.8
-  - VERSION=1.9
-
-
 script:
-  - 'if [[ $TRAVIS_PULL_REQUEST != "false" ]]; then bash ci/test.sh $VERSION; fi'
-  - 'if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then bash ci/build.sh $VERSION; fi'
+  - 'if [[ $TRAVIS_PULL_REQUEST != "false" ]]; then bash ci/test.sh; fi'
+  - 'if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then bash ci/build.sh; fi'
 
 deploy:
   provider: releases
@@ -25,4 +20,5 @@ deploy:
   file: plugin.zip
   skip_cleanup: true
   on:
+    tags: true
     repo: Hexer10/Travis-TestRepo

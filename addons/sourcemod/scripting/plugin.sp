@@ -1,4 +1,4 @@
 public void OnClientPutInServer(int client)
 {
-	PrintToChat(client, "Hello worslds");
+	PrintToChat(client, "Hello world.");
 }
