@@ -30,9 +30,10 @@ Un motivo valido per un KOS o per attaccare un altro giocatore può essere uno d
         Giocatori che sono colpiti da un giocatore.
         DNA dal corpo di un giocatore non-traditore che porta ad un altro giocatore.
         Non rispondere al life check di un Dective. Il lifecheck consiste nel nominare il nome di ogni giocatore (presunto) vivo dalla ScoreBoard (TAB).
-				Passare sopra un corpo non scannerizzato e non farlo.
-				Morire chiamarmente urlando un nome.
-				Entrare nelle zone T, che sono accessibili solo tramite comandi T.
+        Passare sopra un corpo non scannerizzato e non farlo.
+        Morire chiamarmente urlando un nome.
+        Entrare nelle zone T, che sono accessibili solo tramite comandi T.
+        Camperare.
 
 I traditori , ovviamente, sono un caso speciale: sono liberi di attaccare o KOS chiunque non sia un Traditore , poiché questo è il loro obiettivo.
 Anche gli investigatori sono trattati in modo diverso: poiché gli investigatori sono sempre provati, non sono MAI influenzati dagli atti traditori. Accusare di KOS o attaccare un detective è un atto di tradimento in sé.
@@ -122,7 +123,6 @@ REGOLAMENTO PRINCIPALE TTT
     E' vietato qualsiasi tipo di SPAM.
     E' vietato qualsiasi tipo di molestie/insulti/flame.
     E' vietato il cambio nome a round inziato!.
-    E' vietato camperare se non si è T.
     Tutti i nickname devono essere targhettabili e pronunciabili.
     Nessun contenuto gore, porno o inquietante.
     seguono tutte le regole generali presenti su http://regolamento.svapomc.com.
