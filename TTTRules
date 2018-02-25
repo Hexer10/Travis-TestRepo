@@ -25,13 +25,16 @@ Un motivo valido per un KOS o per attaccare un altro giocatore può essere uno d
 
         Qualsiasi atto traditore fatto da un altro giocatore.
         Un KOS contro l'altro giocatore.
-        Essere accusati da un altro giocatore (a meno che non sia un Detective).
+        Essere accusati da un altro giocatore (a meno che non sia un Detective). Da innocente è vietato arrecare danno agli investigatori in qualsiasi maniera (anche per autodifesa).
         Autodifesa.
         Giocatori che sono colpiti da un giocatore.
         DNA dal corpo di un giocatore non-traditore che porta ad un altro giocatore.
-        Non rispondere al life check di un Dective.
+        Non rispondere al life check di un Dective. Il lifecheck consiste nel nominare il nome di ogni giocatore (presunto) vivo dalla ScoreBoard (TAB).
+				Passare sopra un corpo non scannerizzato e non farlo.
+				Morire chiamarmente urlando un nome.
+				Entrare nelle zone T, che sono accessibili solo tramite comandi T.
 
-I traditori , ovviamente, sono un caso speciale: sono liberi di attaccare o KOS chiunque non sia un Traditore , poiché questo è il siloro obiettivo.
+I traditori , ovviamente, sono un caso speciale: sono liberi di attaccare o KOS chiunque non sia un Traditore , poiché questo è il loro obiettivo.
 Anche gli investigatori sono trattati in modo diverso: poiché gli investigatori sono sempre provati, non sono MAI influenzati dagli atti traditori. Accusare di KOS o attaccare un detective è un atto di tradimento in sé.
 
  
@@ -63,6 +66,7 @@ Correggere le chiamate di KOS:
 Affinché un KOS sia valido, deve esprimere esplicitamente che il giocatore in questione è un traditore, sia in un singolo messaggio di testo che attraverso la chat vocale. 
 Ad esempio: "RIKOTTO è un traditore!", "KOS RIKOTTO", o "Se vedi RIKOTTO sparagli in faccia!". 
 Variazioni di questi callout vanno bene purché menzionino esplicitamente uno dei precedenti - ad es. "Kill RIKOTTO", "RIKOTTO è' T", "RIKOTTO è il traitor",  e persino "Uccidi questo bastardo di RIKOTTO" sono tutti KOS validi. 
+E' considerato KOS anche marcare un giocatore T tramite il !radio.
 
 Invece se è un richiamo non menziona nessuno di questi citati sopra,
 per esempio "Opalium ha appena sparato a qualcuno!" o "Opalium ha un'arma T"
@@ -106,7 +110,11 @@ La nostra politica sui server dichiara che tutti gli RDM sono punibili, anche se
 Sì, anche se accidentalmente qualcuno colpisce a caso all'inizio del round, o metti in errore qualcuno prima che finisca. 
 Inoltre, anche se un RDM non è stato segnalato, un membro dello staff può ancora indagare su di esso e segnalare l'autore dell'attacco stesso (detto anche "danno non denunciato"). 
 
- 
+
+Ordini Detective:
+
+Il detective può ordinare ad un giocatore di stare fermo, o farlo andare in uno specifico punto SOLO per poterlo controllare, e per nessun altro motivo.
+Chi non esegue gli ordini del detective è kossabile.
 
 REGOLAMENTO PRINCIPALE TTT
 
