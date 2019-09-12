@@ -24,7 +24,7 @@ jobs:
     steps:
     - name: Download SourceMod
       run: |
-        wget -O sourcemod.tar.gz https://sourcemod.net/latest.php?os=linux&version=1.9
+        wget -O sourcemod.tar.gz https://sm.alliedmods.net/smdrop/1.9/sourcemod-1.9.0-git6282-linux.tar.gz
         
     - name: Extract, Setup and Clean SourceMod
       run: |
