@@ -1,0 +1,62 @@
+name: SourceMod Plugin Workflow
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  dependencies:
+    name: Install dependencies
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install gcc-multilib
+        sudo apt-get install lynx
+        sudo apt-get install lib32stdc++6
+        
+  sourcemod:
+    name: Install SourceMod
+    needs: dependencies
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download SourceMod
+      run: |
+        mkdir sm
+        cd sm/
+        wget -O sourcemod.tar.gz http://sourcemod.net/latest.php?os=linux&version=1.9
+        
+    - name: Extract, Setup and Clean SourceMod
+      run: |
+        ls
+        tar -xzvf sourcemod.tar.gz
+        chmod +x sm/addons/sourcemod/scripting/spcomp
+        chmod +x sm/addons/sourcemod/scripting/compile.sh
+        cd ../
+        find sm/addons/sourcemod/scripting/ -name "*.sp" -type f -delete
+        
+    - name: Copy plugin files
+      run: |
+        cp -rv scripting/. sm/addons/sourcemod/scripting/
+        cp -rv include/. sm/addons/sourcemod/scripting/include
+
+  includes:
+    name: Install extra includes
+    needs: sourcemod
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get x.inc
+      run: echo There were no extra includes to download!
+    
+  compile:
+    name: Compile plugin
+    needs: [dependencies, sourcemod, includes]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Move into the SourceMod directory
+      run: sm/addons/sourcemod/scripting/
+      
+    - name: Compile the plugin
+      run: ./compile.sh
