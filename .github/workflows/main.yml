@@ -34,7 +34,7 @@ jobs:
         chmod +x addons/sourcemod/scripting/spcomp
         chmod +x addons/sourcemod/scripting/compile.sh
         cd ../
-        find sm/addons/sourcemod/scripting/ -name "*.sp" -type f -delete
+        find addons/sourcemod/scripting/ -name "*.sp" -type f -delete
         
     - name: Copy plugin files
       run: |
