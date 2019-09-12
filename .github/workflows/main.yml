@@ -29,6 +29,7 @@ jobs:
     - name: Extract, Setup and Clean SourceMod
       run: |
         ls
+        ls ..
         file sourcemod.tar.gz
         tar -xzvf sourcemod.tar.gz
         chmod +x addons/sourcemod/scripting/spcomp
