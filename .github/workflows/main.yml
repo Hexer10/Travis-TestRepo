@@ -24,23 +24,21 @@ jobs:
     steps:
     - name: Download SourceMod
       run: |
-        mkdir sm
-        cd sm/
         wget -O sourcemod.tar.gz http://sourcemod.net/latest.php?os=linux&version=1.9
         
     - name: Extract, Setup and Clean SourceMod
       run: |
         ls
         tar -xzvf sourcemod.tar.gz
-        chmod +x sm/addons/sourcemod/scripting/spcomp
-        chmod +x sm/addons/sourcemod/scripting/compile.sh
+        chmod +x addons/sourcemod/scripting/spcomp
+        chmod +x addons/sourcemod/scripting/compile.sh
         cd ../
         find sm/addons/sourcemod/scripting/ -name "*.sp" -type f -delete
         
     - name: Copy plugin files
       run: |
-        cp -rv scripting/. sm/addons/sourcemod/scripting/
-        cp -rv include/. sm/addons/sourcemod/scripting/include
+        cp -rv scripting/. addons/sourcemod/scripting/
+        cp -rv include/. addons/sourcemod/scripting/include
 
   includes:
     name: Install extra includes
@@ -56,7 +54,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Move into the SourceMod directory
-      run: sm/addons/sourcemod/scripting/
+      run: addons/sourcemod/scripting/
       
     - name: Compile the plugin
       run: ./compile.sh
