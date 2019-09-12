@@ -24,11 +24,12 @@ jobs:
     steps:
     - name: Download SourceMod
       run: |
-        wget -O sourcemod.tar.gz http://sourcemod.net/latest.php?os=linux&version=1.9
+        wget -O sourcemod.tar.gz https://sourcemod.net/latest.php?os=linux&version=1.9
         
     - name: Extract, Setup and Clean SourceMod
       run: |
         ls
+        file sourcemod.tar.gz
         tar -xzvf sourcemod.tar.gz
         chmod +x addons/sourcemod/scripting/spcomp
         chmod +x addons/sourcemod/scripting/compile.sh
